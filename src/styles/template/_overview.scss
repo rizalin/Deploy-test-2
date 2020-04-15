@@ -1,0 +1,75 @@
+/*------------------------------------*\
+    Overview Style
+\*------------------------------------*/
+
+.tag_limit {
+    position: absolute;
+    bottom: 0;
+    right: 1.7rem;
+    margin-bottom: .5rem;
+}
+
+/*------------------------------------*\
+    Galley Style
+\*------------------------------------*/
+
+.gallery_upload {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 160px;
+
+    i {
+        cursor: pointer;
+        font-size: 3rem;
+    }
+
+    input[type=file] {
+        opacity: 0;
+        cursor: pointer;
+        width: 92%;
+        height: 100%;
+        top: 0;
+        font-size: 0;
+        position: absolute;
+    }
+}
+
+
+/*------------------------------------*\
+	  Responsive
+  \*------------------------------------*/
+
+
+@media (min-width : 350px) {
+
+    ol.breadcrumb {
+        padding-left: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    ol.breadcrumb li.breadcrumb-item:before {
+        display: none !important;
+    }
+
+    ol.breadcrumb li.breadcrumb-item:not(:last-child):after {
+        display: none !important;
+    }
+
+    .btn-overview {
+        .btn-batalkan {
+            min-width: 100;
+        }
+    }
+
+}
+
+@media (min-width: 900px) {
+    ol.breadcrumb li.breadcrumb-item:before {
+        display: inline-block !important;
+    }
+
+    ol.breadcrumb li.breadcrumb-item:not(:last-child):after {
+        display: inline-block !important;
+    }
+}

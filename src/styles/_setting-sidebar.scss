@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    Settings Sidebar Style
+\*------------------------------------*/
+
+.setting {
+	&-sidebar-title {
+		font-size: 18px;
+	  font-weight: bold;
+	  line-height: 1.33;
+	  letter-spacing: 0.3px;
+	  margin-bottom: .75rem;
+	}
+
+	&-sidebar-content {
+
+		li.nav-item {
+
+			a.nav-link {
+				padding-left: 1.4375rem;
+				padding-right: .5rem;
+				color: #979797;
+				font-size: 15px;
+				line-height: 1.33;
+				letter-spacing: 0.25px;
+
+				&.active {
+					font-weight: bold;
+				}
+			}
+
+		}
+
+	}
+
+}

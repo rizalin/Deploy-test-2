@@ -1,0 +1,117 @@
+/*------------------------------------*\
+    Resolution Center
+\*------------------------------------*/
+
+ol.breadcrumb {
+
+    li.breadcrumb-item {
+
+        &.active-batal {
+            color: map-get($theme-colors, "success");
+
+            &:before {
+                background-color: rgba(17, 173, 141, 0.1);
+                content: "\f00d";
+                font-family: "FontAwesome";
+                color: map-get($theme-colors, "success");
+            }
+
+            &:not(:last-child):after {
+                content: "";
+            }
+        }
+    }
+}
+.cancel {
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.38;
+	letter-spacing: 0.27px;
+	text-align: left;
+	color: #979797;
+}
+
+.btn-resolusi {
+	width: 196px;
+	height: 56px;
+	background-color: #0dad8e;
+	font-size: 20px;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.35;
+	letter-spacing: 0.33px;
+	text-align: center;
+}
+
+.btn-kembali {
+	width: 196px;
+	height: 56px;
+	background-color: white;
+	font-size: 14px;
+	font-size: 20px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.35;
+	letter-spacing: 0.33px;
+	text-align: center;
+}
+
+.badge-proses {
+	width: 110px;
+	height: 30.8px;
+	border-radius: 4.4px;
+	background-color: #ff8a5c;
+	font-size: 12.3px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.3;
+	letter-spacing: 0.21px;
+}
+
+.ringkasan-header {
+	font-size: 25px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.36;
+	letter-spacing: 0.42px;
+	text-align: left;
+	color: #979797;
+}
+
+.ringkasan {
+	p {
+		font-size: 18px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.36;
+		letter-spacing: 0.42px;
+		text-align: left;
+		color: #979797;
+	}
+
+	img {
+		width: 128px;
+		height: 96px;
+	}
+}
+
+.detail-ringkasan {
+	label {
+		font-size: 18px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.33;
+		letter-spacing: 0.3px;
+		text-align: left;
+		color: #979797;
+	}
+}

@@ -1,0 +1,102 @@
+/*------------------------------------*\
+    Card Style
+\*------------------------------------*/
+
+.c-card-payment {
+  border-radius: 5px;
+  border: unset;
+  box-shadow: 0 14px 35px 0 rgba(195, 202, 220, 0.29);
+  padding: 15px 25px;
+
+  h5 {
+    font-weight: 600;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  .btn-aktif {
+    width: 20%;
+  }
+
+  .card {
+    border-top: unset;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: 1px solid rgba(195, 202, 220, 0.29) !important;
+  }
+
+  .card-header {
+    border-bottom: 1px solid rgba(195, 202, 220, 0.29);
+    background-color: transparent;
+  }
+
+  .nav-pills {
+    .nav-link.active {
+      background-color: #fbfaf9;
+    }
+  }
+}
+
+/*------------------------------------*\
+    Countdown Style
+\*------------------------------------*/
+
+.card__custom_countdown_payment {
+  padding: 20px;
+
+  h3 {
+    margin-bottom: 1.21875rem;
+  }
+
+  ul > li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 10px;
+
+    div {
+      display: inline-block;
+
+      span {
+        display: block;
+        background-color: #fbfaf9;
+        border-radius: 7.5px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1.36;
+        letter-spacing: 0.75px;
+      }
+
+      p {
+        display: block;
+        font-size: 1rem;
+        padding-top: 0.84375rem;
+      }
+    }
+  }
+}
+
+/*------------------------------------*\
+    Responsive
+\*------------------------------------*/
+
+@media (max-width: 412px) {
+  .c-card-payment {
+    .btn-aktif {
+      max-height: unset;
+      width: 100% !important;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  ol.breadcrumb li.breadcrumb-item:before {
+    display: inline-block !important;
+  }
+
+  ol.breadcrumb li.breadcrumb-item:not(:last-child):after {
+    display: inline-block !important;
+  }
+}

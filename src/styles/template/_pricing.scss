@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    Overview Style
+\*------------------------------------*/
+
+.center_custom_checkbox {
+    margin-right: -1rem;
+}
+
+.overlay-pricing {
+    display: flex !important;
+    background-color: #ffffff;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .7;
+}
+
+/*------------------------------------*\
+	  Responsive
+  \*------------------------------------*/
+
+
+@media (min-width : 350px) {
+
+    .c-pricing {
+        &-revisi {
+            display: none;
+        }
+
+        &-harga {
+            display: none;
+        }
+
+    }
+
+}
+
+@media (min-width: 900px) {
+    .c-pricing {
+        &-revisi {
+            display: unset;
+        }
+
+        &-harga {
+            display: unset;
+        }
+
+    }
+}
+
+@media (max-width : 576px) {
+    .overlay-pricing {
+        height: 66%;
+    }
+}

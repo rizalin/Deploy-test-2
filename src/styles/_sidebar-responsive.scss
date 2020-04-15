@@ -1,0 +1,79 @@
+.sidebar-responsive {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  z-index: 999;
+  background: #ffffff;
+  -webkit-transition: 300ms ease all;
+  transition: 300ms ease all;
+  text-align: left;
+  overflow-x: hidden;
+
+  &.active {
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px);
+  }
+
+  ul {
+    li {
+      a {
+        font-size: 1rem;
+        color: map-get($font-colors, 'primary');
+
+        &.active {
+          color: map-get($theme-colors, 'success');
+          font-weight: bold;
+        }
+
+        &[data-toggle='collapse'] {
+          position: relative;
+        }
+
+        .media {
+          img.rounded-circle {
+            max-width: 46px;
+            max-height: 46px;
+          }
+        }
+      }
+
+      .dropdown-toggle {
+        font-size: 1rem;
+        color: map-get($font-colors, 'primary');
+
+        &:after {
+          content: '\f078';
+          font-family: FontAwesome;
+          display: block;
+          position: absolute;
+          top: 50%;
+          right: 1rem;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          border: none;
+        }
+
+        &.collapsed {
+          &:after {
+            content: '\f054';
+          }
+        }
+      }
+    }
+  }
+}
+
+.burger-button {
+  color: #131415;
+  .toggler {
+    background-image: url('https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png');
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    content: '';
+    background-size: 100% 100%;
+  }
+}

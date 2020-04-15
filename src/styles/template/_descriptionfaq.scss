@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    Responsive
+\*------------------------------------*/
+
+
+@media (min-width : 350px) {
+
+    ol.breadcrumb {
+        padding-left: 0px !important;
+        padding-bottom: 0px !important;
+    }
+
+    ol.breadcrumb li.breadcrumb-item:before {
+        display: none !important;
+    }
+
+    ol.breadcrumb li.breadcrumb-item:not(:last-child):after {
+        display: none !important;
+    }
+
+    .btn-description {
+        .btn-batalkan {
+            min-width: 100;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    ol.breadcrumb li.breadcrumb-item:before {
+        display: inline-block !important;
+    }
+
+    ol.breadcrumb li.breadcrumb-item:not(:last-child):after {
+        display: inline-block !important;
+    }
+}

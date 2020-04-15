@@ -1,0 +1,122 @@
+/*------------------------------------*\
+    Wishlist 
+\*------------------------------------*/
+
+.carousel-judul {
+    font-family: Nunito;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.37;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #54586e;
+}
+
+.card-price {
+    p {
+        font-family: Nunito;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--blue);
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}
+
+.card-wishlist-right{
+    width: 248px;
+    img {
+        width: 247px;
+        height: 196px;
+    }
+}
+
+.card-media{
+    img {
+        width: 51px;
+        height: 51px;
+    }
+}
+
+.card-name{
+    font-family: NunitoSansSemiBold;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--brown-grey);
+    margin-left: -5px;
+}
+
+.card-review {
+    margin-left: -5px;
+    margin-top: -10px;
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+
+    p {
+        margin-top: 2px;
+        margin-left: 3px;
+        font-family: NunitoSansExtraBold;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: var(--brown-grey);
+    }
+}
+
+.card-detail {
+    margin-top:15px;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: 0.23px;
+    text-align: left;
+    color: var(--brownish-grey);
+}
+
+.card-footer{
+    background-color: white;
+}
+
+.wishlist-page {
+    & .position-relative {
+        margin-right: -1rem;
+        margin-left: -1rem;
+
+        & .swiper-button-next,
+        & .swiper-button-prev {
+            outline: none;
+        }
+
+        & .swiper-button-next:after,
+        & .swiper-button-prev:after {
+            font-size: 16px;
+            background-color: #fafafa;
+            color: #212121;
+            padding: 12px 20px;
+            border-radius: 50%;
+            box-shadow: 0 7px 14px 0 rgba(80,89,113,.22);
+        }
+    }
+}

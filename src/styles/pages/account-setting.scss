@@ -1,0 +1,62 @@
+.setting-content {
+    background-color: #f3f3f3;
+    padding-top: 2.5rem;
+    min-height: 650px;
+
+    .card-body {
+
+        padding: 2rem 2rem;
+
+        .card-profile {
+            background-color: #fbf9fb;
+
+            img {
+                height: 80px;
+            }
+
+            p {
+                padding-top: 1rem;
+            }
+        }
+
+        .btn-kata-sandi {
+            background-color: #fbf9fb;
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .custom-file-upload {
+            background-color: #ffffff;
+            cursor: pointer;
+
+            width: 100%;
+
+            label {
+                font-size: 18px;
+                padding-top: .4rem;
+                cursor: pointer;
+            }
+
+        }
+
+        .text-akun {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+}
+
+.setting-sidebar-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: .3px;
+    margin-bottom: .75rem;
+}
+
+.text-ubah {
+    line-height: 2.7rem;
+    margin-left: 20px;
+}

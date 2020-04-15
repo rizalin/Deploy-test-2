@@ -1,0 +1,116 @@
+/*------------------------------------*\
+    Profile card
+\*------------------------------------*/
+
+.c-profile {
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  .progress {
+    border-radius: 50px;
+    height: 12px;
+
+    &-bar {
+      background-color: #0dad8e;
+      border-radius: 50px;
+    }
+  }
+
+  .badge-success {
+    background-color: #0dad8e;
+  }
+}
+
+// .c-pesan {
+// }
+
+.seller-pesanan-list > .row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.navlink-seller {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #979797;
+  line-height: 1.35;
+  letter-spacing: 0.33px;
+  margin: 0.78125rem 0.3125rem;
+  padding: 0.125rem 0.3125rem;
+  position: relative;
+
+  &.aktif {
+    span:after {
+      content: '';
+      border-bottom: 2.5px solid map-get($theme-colors, 'success');
+      border-radius: 4px;
+      width: 100%;
+      display: inline-block;
+      margin-bottom: -1.5px;
+      bottom: -14px;
+      left: 0px;
+      position: absolute;
+    }
+  }
+
+  a {
+    color: #979797;
+  }
+}
+
+@media (min-width: 992px) {
+  .border__top_right {
+    max-width: 76%;
+  }
+
+  .border__top_left {
+    max-width: 24%;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard__partner {
+    .container-fluid {
+      padding: 0 15px !important;
+    }
+  }
+}
+
+.dashboard__partner {
+  .container-fluid {
+    padding: 0 50px;
+  }
+
+  .btn-terlambat:hover {
+    color: #fff !important;
+  }
+}
+
+.start__button {
+  font-size: 15px;
+  background-color: #0dad8e;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2rem;
+  color: #fff;
+  font-weight: 700;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+@media (max-width: 412px) {
+  .right-content {
+    .card__custom_global {
+      padding: 0;
+    }
+  }
+}

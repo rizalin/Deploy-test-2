@@ -1,0 +1,87 @@
+/*------------------------------------*\
+    Order detail card    
+\*------------------------------------*/
+
+.c-order-detail {
+    h5 {
+        font-size: 25px;
+        font-weight: lighter;
+        color: #212121;
+    }
+
+    .card {
+        border: 0px;
+
+        &-body {
+            padding: 25px;
+            box-shadow: 0 14px 35px 0 rgba(195, 202, 220, 0.29);
+        }
+    }
+
+    table {
+        th {
+            border: 0px none;
+            background-color: #fbfaf9;
+            color: #979797;
+            text-transform: capitalize;
+        }
+
+        td {
+            border: 0px none;
+            color: #979797;
+        }
+    }
+
+    .table-price {
+        border-top: solid 1px #e0e0e0;
+        padding: 25px 0px 0px;
+        font-size: 20px
+    }
+
+    .media {
+        h5 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0dad8e;
+            text-transform: capitalize;
+            padding-top: 5px;
+
+        }
+    }
+
+    textarea {
+        background-color: #fbfaf9;
+        border: 0px none;
+        border-radius: 5px;
+    }
+}
+
+/*------------------------------------*\
+   Modal style
+\*------------------------------------*/
+
+#modalDetailSeller {
+
+    .modal {
+
+        &-header {
+            border-bottom: 0px none;
+            background-color: #fbfaf9;
+            font-weight: bolder;
+            text-transform: capitalize;
+            color: #979797 !important;
+        }
+
+    }
+
+    .card {
+
+        &-body {
+            box-shadow: none !important;
+            background-color: #e1fff9;
+            border-radius: 5px;
+        }
+
+    }
+
+}

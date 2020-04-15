@@ -1,0 +1,229 @@
+/*------------------------------------*\    
+    Daftar Orderan Style
+\*------------------------------------*/
+
+.dropdown-navDaftarProjectRes {
+  .dropdown-toggle {
+    border: 1px solid hsla(0, 0%, 43.9%, 0.3);
+
+    &:focus {
+      outline: none !important;
+      box-shadow: none;
+    }
+  }
+}
+
+.list-daftar-orderan {
+  a {
+    color: #979797;
+
+    &:hover {
+      color: #0dad8e;
+    }
+  }
+
+  ul {
+    &:nth-child(odd) {
+      background-color: #fff;
+    }
+
+    &:nth-child(even) {
+      background-color: #fff;
+    }
+
+    li {
+      & img.rounded-circle {
+        margin-left: 0.4375rem;
+        margin-right: 0.8875rem;
+        max-width: 2.425rem;
+        max-height: 2.425rem;
+      }
+    }
+  }
+}
+
+/* big */
+@media screen and (min-width: 993px) {
+  .list-daftar-orderan {
+    display: table;
+    width: 100%;
+    border-collapse: separate !important;
+    border-spacing: 0 1em;
+
+    ul {
+      display: table-row;
+
+      li {
+        &.nowrap {
+          white-space: nowrap;
+        }
+
+        &.txt-center {
+          text-align: center;
+        }
+
+        display: table-cell;
+        vertical-align: middle;
+        padding: 0.3125rem 0.75rem;
+        padding-right: 0.3125rem;
+
+        &[data-label] {
+          border-top: 1px solid hsla(0, 0%, 43.9%, 0.3);
+          border-bottom: 1px solid hsla(0, 0%, 43.9%, 0.3);
+
+          &:first-child {
+            padding-left: 0;
+            border-left: 1px solid hsla(0, 0%, 43.9%, 0.3);
+          }
+
+          &:last-child {
+            border-right: 1px solid hsla(0, 0%, 43.9%, 0.3);
+          }
+        }
+
+        &[data-label='Pembeli'] {
+          font-size: 1.125rem;
+          font-weight: 700;
+          white-space: nowrap;
+        }
+      }
+
+      &.header > li {
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: capitalize;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/* small */
+@media screen and (max-width: 992px) {
+  .list-daftar-orderan {
+    ul {
+      display: block;
+      list-style: none;
+      padding: 0;
+      border: 1px solid hsla(0, 0%, 43.9%, 0.3);
+      padding-bottom: 0.5rem;
+
+      &.header {
+        display: none;
+      }
+
+      li[data-label] {
+        display: block;
+        padding: 0.5rem 1.5rem;
+
+        &:before {
+          content: attr(data-label);
+          display: inline-block;
+          font-weight: bold;
+          text-transform: capitalize;
+          vertical-align: top;
+          width: 30%;
+          text-align: left !important;
+        }
+
+        &[data-label='Gawean'],
+        &[data-label='Catatan'] {
+          &:before {
+            width: 100%;
+          }
+        }
+
+        &[data-label='Status'] {
+          &:before {
+            margin-bottom: 0.5rem;
+          }
+        }
+
+        &:first-child {
+          position: relative;
+          background-color: #fbfaf9;
+          padding: 1rem 1.5rem;
+
+          &:before {
+            font-size: 18px;
+            margin-top: 0.4rem;
+          }
+
+          img.rounded-circle {
+            margin-left: 0;
+          }
+        }
+      }
+
+      /*&:nth-child(odd) > li + li {
+		    border-top:solid 1px #ccc;
+		  }
+
+		  &:nth-child(even) > li + li {
+		    border-top:solid 1px #eee;
+		  }*/
+    }
+  }
+
+  .card__custom_countdown ul > li div span {
+    background-color: #fff !important;
+    padding: 0 !important;
+  }
+
+  .card__custom_countdown ul > li:not(:last-child):after {
+    padding-top: 0 !important;
+  }
+}
+
+/* tiny */
+@media screen and (max-width: 349px) {
+  .list-daftar-orderan {
+    ul > li[data-label]:before {
+      display: block;
+    }
+  }
+}
+
+.tab-orderan {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-transform: capitalize;
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #979797;
+    line-height: 1.35;
+    letter-spacing: 0.33px;
+    margin: 0.78125rem 0.3125rem;
+    padding: 0.125rem 0.3125rem;
+    position: relative;
+
+    &.active:after {
+      content: '';
+      border-bottom: 2.5px solid map-get($theme-colors, 'success');
+      border-radius: 4px;
+      width: 100%;
+      display: inline-block;
+      margin-bottom: -1.5px;
+      bottom: -14px;
+      left: 0px;
+      position: absolute;
+    }
+  }
+
+  a {
+    color: #979797;
+  }
+}
+
+.blank-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  text-align: center;
+  img {
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    max-height: 100px;
+  }
+}

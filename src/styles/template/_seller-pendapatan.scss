@@ -1,0 +1,156 @@
+/*------------------------------------*\
+    Nav Style
+\*------------------------------------*/
+
+.nav__menu.nav-seller {
+
+    .nav-item.active {
+        background-color: unset !important;
+        color: #0dad8e !important;
+        min-height: 50px;
+    }
+
+    .nav-item {
+        margin-left: 3em;
+    }
+
+}
+
+/*------------------------------------*\
+    Pendapatan Style
+\*------------------------------------*/
+
+.c-seller-pendapatan {
+
+    h5 {
+        padding-top: 10px;
+    }
+
+    small {
+        font-size: 14px;
+    }
+
+    .card {
+
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.10);
+        background-color: #fff;
+        border: 0;
+    }
+
+}
+
+/*------------------------------------*\
+    Pendapatan Style
+\*------------------------------------*/
+
+.c-seller-riwayat {
+
+    .dropdown-toggle {
+
+        &:after {
+            margin: 0px 0px 0px 20px
+        }
+
+    }
+
+    &-table {
+        h5 {
+            font-size: 16px;
+        }
+    }
+
+    &-table-isi {
+        h5 {
+            font-size: 14px;
+            padding-top: 20px;
+        }
+    }
+
+}
+
+/*------------------------------------*\
+    List-Pendapatan Style
+\*------------------------------------*/
+
+/* big */
+@media screen and (min-width:992px) {
+    .list-seller-pendapatan {
+        display: table;
+        width: 100%;
+        ul {
+            display: table-row;
+            li {
+                &.list-label,
+                &[data-label] {
+                    display: table-cell;
+                    padding: 1rem;
+                    text-align: center;
+                    padding-top: 0;
+                }
+
+                &[data-label] {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+
+/* small */
+@media screen and (max-width:991.98px) {
+    .list-seller-pendapatan {
+        ul {
+            display: block;
+            list-style: none;
+            padding: 0;
+            &.header {
+                display: none;
+            }
+            &.footer {
+                .footer-clear {
+                    display: none;
+                }
+                .hasBorderTop {
+                    border-top: 1px solid rgba(0, 0, 0, .1);
+                }
+            }
+            li[data-label] {
+                display: block;
+                padding: .5rem;
+                &:before {
+                    content: attr(data-label);
+                    display: inline-block;
+                    text-transform: capitalize;
+                    vertical-align: top;
+                    font-weight: normal;
+                    width: 70%;
+                }
+
+                &[data-label] {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .card__custom_countdown ul>li div span {
+        background-color: #fff !important;
+        padding: 0 !important;
+    }
+    .card__custom_countdown ul>li:not(:last-child):after {
+        padding-top: 0 !important;
+    }
+}
+
+
+/* tiny */
+
+@media screen and (max-width:349px) {
+    .list-seller-pendapatan {
+        ul > li[data-label]:before {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,322 @@
+/*------------------------------------*\
+    Nav Style
+\*------------------------------------*/
+
+.nav__menu.nav-seller {
+  .nav-item.active {
+    background-color: unset !important;
+    color: #0dad8e !important;
+    min-height: 50px;
+  }
+
+  .nav-item {
+    margin-left: 3em;
+  }
+}
+
+/*------------------------------------*\
+    Pendapatan Style
+\*------------------------------------*/
+
+.c-seller-pendapatan {
+  h5 {
+    padding-top: 10px;
+  }
+
+  small {
+    font-size: 14px;
+  }
+
+  .card {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 0;
+  }
+}
+
+/*------------------------------------*\
+    Pendapatan Style
+\*------------------------------------*/
+
+.c-seller-riwayat {
+  .select2 {
+    &__control {
+      // max-width: 10rem;
+      box-shadow: none;
+
+      &--is-focused {
+        border-color: #0dad8e;
+        &:hover {
+          border-color: #0dad8e;
+        }
+      }
+    }
+
+    &__menu {
+      max-width: 10rem;
+    }
+
+    &__option {
+      background-color: #fff;
+      &:active {
+        background-color: rgba($color: #0dad8e, $alpha: 0.3);
+      }
+
+      &--is-focused {
+        background-color: rgba($color: #0dad8e, $alpha: 0.3);
+      }
+
+      &--is-selected {
+        color: #707070;
+        background-color: rgba($color: #0dad8e, $alpha: 0.6);
+      }
+    }
+  }
+
+  .dropdown-toggle {
+    &:after {
+      margin: 0px 0px 0px 20px;
+    }
+  }
+
+  &-table {
+    h5 {
+      font-size: 16px;
+    }
+  }
+
+  &-table-isi {
+    h5 {
+      font-size: 14px;
+      padding-top: 20px;
+    }
+  }
+}
+
+/*------------------------------------*\
+    List-Pendapatan Style
+\*------------------------------------*/
+
+/* big */
+@media screen and (min-width: 1024px) {
+  .list-seller-pendapatan {
+    display: table;
+    width: 100%;
+    ul {
+      display: table-row;
+      li {
+        &.list-label,
+        &[data-label] {
+          display: table-cell;
+          padding: 1rem;
+          text-align: center;
+          padding-top: 0;
+        }
+
+        &[data-label] {
+          font-size: 1.1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+/* small */
+@media screen and (max-width: 991.98px) {
+  .list-seller-pendapatan {
+    ul {
+      display: block;
+      list-style: none;
+      padding: 0;
+      &.header {
+        display: none;
+      }
+      &.footer {
+        .footer-clear {
+          display: none;
+        }
+        .hasBorderTop {
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+      }
+      li[data-label] {
+        display: block;
+        padding: 0.5rem;
+        &:before {
+          content: attr(data-label);
+          display: inline-block;
+          text-transform: capitalize;
+          vertical-align: top;
+          font-weight: normal;
+          width: 70%;
+        }
+
+        &[data-label] {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .card__custom_countdown ul > li div span {
+    background-color: #fff !important;
+    padding: 0 !important;
+  }
+  .card__custom_countdown ul > li:not(:last-child):after {
+    padding-top: 0 !important;
+  }
+}
+
+/* tiny */
+
+@media screen and (max-width: 349px) {
+  .list-seller-pendapatan {
+    ul > li[data-label]:before {
+      display: block;
+    }
+  }
+}
+
+/*------------------------------------*\
+    List-Penarikan Style
+\*------------------------------------*/
+
+.c-seller-penarikan {
+  .list-seller-pendapatan {
+    ul > li[data-label] {
+      font-size: 1.4rem;
+    }
+  }
+
+  .dd-wrapper {
+    min-width: 18rem;
+  }
+
+  .btn {
+    min-width: 10rem;
+  }
+
+  .select1__control {
+    box-shadow: none;
+
+    &--is-focused {
+      border-color: #0dad8e;
+      &:hover {
+        border-color: #0dad8e;
+      }
+    }
+  }
+
+  .select1__option {
+    background-color: #fff;
+    &:active {
+      background-color: rgba($color: #0dad8e, $alpha: 0.3);
+    }
+
+    &--is-focused {
+      background-color: rgba($color: #0dad8e, $alpha: 0.3);
+    }
+
+    &--is-selected {
+      color: #707070;
+      background-color: rgba($color: #0dad8e, $alpha: 0.6);
+    }
+  }
+}
+
+/*------------------------------------*\
+     Modal Style
+\*------------------------------------*/
+.add-bank__modal {
+  .form-control-plaintext {
+    color: #707070;
+  }
+  .modal-content {
+    // min-width: 30rem;
+    .modal-body {
+      padding: 2rem;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+      .col {
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}
+
+.btn-withdraw {
+  margin-top: 1rem !important;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto !important;
+  .btn {
+    min-width: 8rem;
+  }
+}
+.btn-bank {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+
+  .btn {
+    min-width: 8rem;
+  }
+}
+
+.modal-done {
+  padding: 3rem;
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  .btn-bank {
+    width: 90%;
+  }
+}
+
+/*------------------------------------*\
+    Otp Style
+\*------------------------------------*/
+.otp-wrap {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  position: relative;
+  display: flex;
+  width: fit-content;
+  margin: 0.5rem auto 2rem;
+}
+
+.otp-input {
+  position: absolute;
+  border: none;
+  font-size: 32px;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+}
+.otp-display {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  width: 32px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  position: relative;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.otp-shadows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 0 0 4px rgba($color: #0dad8e, $alpha: 0.3);
+}

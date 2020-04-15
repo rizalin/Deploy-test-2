@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    Saldo Page Style
+\*------------------------------------*/
+
+.table__saldo {
+	color: #62646a;
+	border-collapse: collapse;
+  border-radius: 5px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+  line-height: 1.38;
+  letter-spacing: 0.27px;
+
+  th, td {
+		padding: 1rem 1.125rem;
+  }
+
+  p {
+  	font-size: 12px;
+  	line-height: 1.33;
+  	letter-spacing: 0.2px;
+  	font-weight: normal;
+  }
+
+  thead {
+  	tr {
+  		th {
+  			background-color: #fafafa;
+  			border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+  			&:first-child {
+  				border-right: 1px solid rgba(0, 0, 0, .1);
+  			}
+
+  		}
+  	}
+  }
+}

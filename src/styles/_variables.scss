@@ -1,0 +1,313 @@
+/*------------------------------------*\
+    Global General Class Styles
+\*------------------------------------*/
+
+$font-primary: 'Nunito';
+
+$primary: #003bde;
+$success: #0dad8e;
+$danger: #ff4136;
+
+$font-colors: (
+  'primary': #979797,
+  'secondary': #afb1bd,
+  'white': #ffffff,
+  'footer': #131415
+);
+$theme-colors: (
+  'primary': $primary,
+  'success': $success,
+  'danger': $danger
+);
+
+$bg-colors: (
+  'white': #ffffff,
+  'footer': #fbfaf9
+);
+
+/*------------------------------------*\
+    Button Color Class Style
+\*------------------------------------*/
+
+@mixin hover-state($fontcolor) {
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:hover {
+    color: $fontcolor !important;
+    box-shadow: 0 5px 10px rgba(61, 63, 79, 0.2);
+    transform: translateY(-2px);
+  }
+}
+
+.btn {
+  min-height: 45px;
+  max-height: 56px;
+  padding-top: 10px;
+
+  &-prioritas {
+    background-color: #ff8a5c;
+    color: #ffffff;
+    @include hover-state(#ffffff);
+  }
+
+  &-aktif {
+    background-color: #003bde;
+    color: #ffffff;
+    @include hover-state(#fafafa);
+  }
+
+  &-terlambat {
+    background-color: #43ccf7;
+    color: #ffffff;
+    @include hover-state(#212121);
+  }
+
+  &-selesai {
+    background-color: #0dad8e;
+    color: #ffffff;
+    @include hover-state(#fafafa);
+  }
+
+  &-dikirim {
+    background-color: #055d4c;
+    color: #ffffff;
+    @include hover-state(#fafafa);
+  }
+
+  &-order_batal {
+    background-color: #ef2547;
+    color: #ffffff;
+    @include hover-state(#fafafa);
+  }
+
+  &-ghost {
+    background-color: rgba(17, 173, 141, 0.1);
+    color: #ffffff;
+    @include hover-state(#11ad8d);
+  }
+
+  &-batalkan {
+    background-color: #979797;
+    color: #ffffff;
+    @include hover-state(#fafafa);
+  }
+
+  &-white {
+    background-color: #ffffff;
+    color: #2fca71;
+    border: solid #2fca71 0.5px;
+    @include hover-state(#2fca71);
+  }
+
+  &-dropdown {
+    background-color: #ffffff;
+    border: 0.5px #e0e0e0 solid;
+    color: #212121;
+  }
+
+  &-lg {
+    padding: 0.875rem;
+    font-size: 1.25rem;
+    line-height: 1.35;
+    letter-spacing: 0.33px;
+    border-radius: 5px;
+    min-width: 12.25rem;
+    font-weight: normal;
+  }
+
+  &-header {
+    max-width: 130px;
+  }
+
+  &-buyer {
+    width: 14rem;
+  }
+}
+
+/*------------------------------------*\
+    Font Color Class Style
+\*------------------------------------*/
+
+.text-dark {
+  color: #545870 !important;
+}
+
+.text-success {
+  color: map-get($theme-colors, 'success') !important;
+}
+
+.text-blue {
+  color: map-get($theme-colors, 'primary');
+}
+/*------------------------------------*\
+    Font Size Class Style
+\*------------------------------------*/
+
+.fs-16 {
+  font-size: 1rem; //16px
+}
+
+.fs-18 {
+  font-size: 1.125rem; //18px
+}
+
+/*------------------------------------*\
+    Text Area & Input Class Style
+\*------------------------------------*/
+
+.ta-border {
+  resize: none;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 0.625rem 0.6875rem;
+  color: map-get($font-colors, 'primary');
+
+  &::placeholder {
+    color: map-get($font-colors, 'primary');
+    opacity: 0.6;
+  }
+
+  &:-ms-input-placeholder {
+    color: map-get($font-colors, 'primary');
+    opacity: 0.6;
+  }
+
+  &::-ms-input-placeholder {
+    color: map-get($font-colors, 'primary');
+    opacity: 0.6;
+  }
+}
+
+.form-control {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.875rem;
+  padding: 0.5625rem 0.625rem;
+  height: auto;
+  color: map-get($font-colors, 'primary');
+
+  &:focus {
+    border-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: map-get($font-colors, 'primary');
+  }
+}
+
+.input-group {
+  .form-control {
+    border-right: 0;
+  }
+
+  .choose_file {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    i {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-left: 0;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      background-color: transparent;
+      padding: 0.75rem 0.625rem;
+      padding-right: 1.125rem;
+      color: #c1c1c1;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    input[type='file'] {
+      opacity: 0;
+      cursor: pointer;
+      width: 42px;
+      height: 42px;
+      font-size: 0;
+      position: absolute;
+    }
+  }
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  padding-right: 1.7rem;
+
+  & + i.fa {
+    float: right;
+    margin-top: -1.5rem;
+    margin-right: 0.9rem;
+    pointer-events: none;
+    font-size: 0.6rem;
+  }
+}
+
+.custom-control-label {
+  &:after,
+  &:before {
+    top: 0;
+    width: 1.1875rem;
+    height: 1.1875rem;
+    cursor: pointer;
+  }
+
+  &:before {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.custom-control-input {
+  &:focus ~ .custom-control-label::before {
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  }
+
+  &:checked ~ .custom-control-label:before {
+    background-color: map-get($theme-colors, 'success');
+    border-color: map-get($theme-colors, 'success');
+  }
+}
+
+.custom-switch {
+  .custom-control-label {
+    &:after {
+      top: calc(0.23rem + 2px);
+      left: calc(-2rem + 2px);
+      width: calc(1.95rem - 4px);
+      height: calc(1.95rem - 4px);
+      border-radius: 50%;
+      background-color: map-get($bg-colors, 'white');
+      cursor: pointer;
+    }
+
+    &:before {
+      width: 4.2rem;
+      height: 2.4rem;
+      border-radius: 1.2rem;
+      background-color: map-get($font-colors, 'primary');
+      cursor: pointer;
+    }
+  }
+
+  .custom-control-input {
+    &:checked ~ .custom-control-label:after {
+      -webkit-transform: translateX(1.8rem);
+      transform: translateX(1.8rem);
+      box-shadow: 0 2px 3px 0 #009b4e;
+    }
+
+    &:active ~ .custom-control-label::before {
+      background-color: map-get($font-colors, 'primary');
+      border-color: transparent;
+    }
+  }
+}

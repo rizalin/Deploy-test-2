@@ -1,0 +1,284 @@
+/*------------------------------------*\
+    Tips Sukses
+\*------------------------------------*/
+
+
+.konten-kiri {
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom, rgba(78, 78, 78, 0) 45%, #000000);
+    }
+
+    .judul-konten-kiri {
+        position: absolute;
+        color: var(--white);
+        font-family: Nunito;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        bottom: 1.5rem;
+        left: 24px;
+    }
+
+    .time-konten-kiri {
+        position: absolute;
+        font-family: Nunito;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: 0.33px;
+        text-align: left;
+        color: var(--white);
+        bottom: 0;
+        left: 24px;
+    }
+}
+
+.konten-kanan {
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom, rgba(78, 78, 78, 0) 45%, #000000);
+    }
+
+    .judul-konten-kanan {
+        position: absolute;
+        font-family: Nunito;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: 0.53px;
+        text-align: left;
+        color: var(--white);
+        bottom: 1.5rem;
+        left: 24px;
+    }
+
+    .time-konten-kanan {
+        position: absolute;
+        font-family: Nunito;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: 0.33px;
+        text-align: left;
+        color: var(--white);
+        bottom: 0;
+        left: 24px;
+    }
+}
+
+.kiri-bawah {
+    img {
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom, rgba(78, 78, 78, 0) 45%, #000000);
+    }
+
+    .judul-kiri-bawah {
+        position: absolute;
+        font-family: Nunito;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: 0.53px;
+        text-align: left;
+        color: var(--white);
+        bottom: 1.5rem;
+        left: 24px;
+    }
+
+    .time-kiri-bawah {
+        position: absolute;
+        font-family: Nunito;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: 0.33px;
+        text-align: left;
+        color: var(--white);
+        bottom: 0;
+        left: 24px;
+    }
+
+    @media(max-width: 576px) {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.kanan-bawah {
+    img {
+        position: relative;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        background-image: linear-gradient(to bottom, rgba(78, 78, 78, 0) 45%, #000000);
+    }
+
+    .judul-kanan-bawah {
+        position: absolute;
+        font-family: Nunito;
+        font-size: 24px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: 0.53px;
+        text-align: left;
+        color: var(--white);
+        bottom: 1.5rem;
+        left: 24px;
+    }
+
+    .time-kanan-bawah {
+        position: absolute;
+        font-family: Nunito;
+        font-size: 15px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.33;
+        letter-spacing: 0.33px;
+        text-align: left;
+        color: var(--white);
+        bottom: 0;
+        left: 24px;
+    }
+
+    @media(max-width: 767px) {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.konten-post {
+    margin-bottom: 47px;
+    font-family: Nunito;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: left;
+    color: var(--brown-grey);
+
+    img {
+        height: 208px;
+        object-fit: contain;
+        border-radius: 5px;
+        border: solid 1px var(--brownish-grey);
+        margin-right: 24px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.34;
+        letter-spacing: 0.7px;
+        margin-bottom: 6px;
+    }
+
+    .time-post {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.38;
+        letter-spacing: 0.35px;
+        margin-bottom: 18px;
+    }
+
+    .isi-post {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.63;
+        letter-spacing: 0.32px;
+    }
+
+    @media(max-width: 576px) {
+        display: block;
+
+        > img {
+            object-fit: cover;
+            margin-right: unset;
+            width: 100%;
+            margin-bottom: 1rem;
+            max-height: unset !important;
+            max-width: unset !important;
+        }
+    }
+}
+
+
+.tab-sukses > .nav-item.active {
+    height: 40px;
+    background-color: #0dad8e;
+}
+
+.cerita-sukses {
+    margin-top: 8px;
+    margin-left: 15px;
+    height: 40px;
+    font-family: Nunito;
+    font-size: 16px;
+    width: 144px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.63;
+    letter-spacing: 0.32px;
+    text-align: left;
+    color: var(--white);
+    background-color: var(--blue-green);
+}
+
+.list-cerita {
+    font-family: Nunito;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: left;
+    color: var(--black);
+
+    .judul-cerita-sukses {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.63;
+        letter-spacing: 0.32px;
+    }
+
+    .post-cerita-sukses {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 1.38;
+        letter-spacing: 0.35px;
+        color: var(--black);
+    }
+
+    img {
+        height: 128px;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+}
